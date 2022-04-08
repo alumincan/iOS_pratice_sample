@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KX9-AJ-wQe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kB7-J9-hwv">
+                                <rect key="frame" x="168" y="433" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <color key="baseForegroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="UYw-vs-VNP" kind="show" id="YHO-VH-HAa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r8Q-Dl-Seb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r8I-24-PjX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KX9-AJ-wQe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="azO-mh-pig">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6iS-mz-MRs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sn-eG-api" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OJ4-30-Sac">
+            <objects>
+                <viewController id="KOY-bX-W7I" customClass="ViewController" customModule="BookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="vMa-TY-eL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1S-HI-is4">
+                                <rect key="frame" x="54" y="229" width="132" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                    <color key="baseForegroundColor" red="1" green="0.4496970663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="4HN-Ym-Lor" kind="show" id="BdI-X2-gxp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-I0-xmJ">
+                                <rect key="frame" x="237" y="229" width="132" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                    <color key="baseForegroundColor" red="1" green="0.4496970663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="L7q-la-Dji" kind="show" id="Smc-cA-I8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axO-kD-RiE">
+                                <rect key="frame" x="54" y="484" width="132" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="O">
+                                    <color key="baseForegroundColor" red="1" green="0.4496970663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="KdN-NZ-IGF" kind="show" id="Lpm-3H-Xzq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbN-S5-Jnx">
+                                <rect key="frame" x="237" y="484" width="132" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AB">
+                                    <color key="baseForegroundColor" red="1" green="0.4496970663" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Cdf-xr-WX2" kind="show" id="AOe-3j-9Et"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TDQ-Ch-c2O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3To-vd-Oem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvY-ks-8ss" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="-273"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AyY-yx-qzC">
+            <objects>
+                <viewController id="4HN-Ym-Lor" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8FD-nd-rRs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毒舌版血型分析：A型人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-s6-oen">
+                                <rect key="frame" x="53" y="118" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-QS-Evm">
+                                <rect key="frame" x="53" y="259" width="319" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">你是那種做事會按照順序、有組織能力的人，而且你應該是必須要井然有序地從頭做起，非常容易認真，想必是想聽到周邊的人誇讚你好棒棒吧！但是這種好棒棒的稱讚中，包含了有點負面的含意，因為你的認真，有時候變成了一種過於固執及頑固、不懂變通的個性。
+
+周圍的人其實想要輕鬆的氛圍，但卻因為你而讓氣氛凝結，尤其是你有了男朋友、結婚對象的話，會有跟另一半講別人壞話或是抱怨的傾向，這點要特別注意。雖然你會因為自己的堅持而達到目標，但也可能會破壞了人際關係。
+
+此外，A型的你往往傾向片面的思考方式，彷彿像是闖關遊戲一樣，要將原因跟結果一一比對才型，這樣的個性認真起來當然好處是比較多，但所有事物不是都只能按照規定的規則走，這個世界中，不合適和不可思議的事情有很多，放輕鬆一點會更好！不用每次都要拿100分，允許自己偶爾就得到80分左右吧。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lOe-f7-Zub"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O8G-LA-ONm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZd-ie-mAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3737.68115942029" y="-433.25892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Hf-Zz-wd7">
+            <objects>
+                <viewController id="UYw-vs-VNP" customClass="ViewController" customModule="BookApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="vpm-pX-4SC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-cd-INl">
+                                <rect key="frame" x="168" y="328" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="血型">
+                                    <color key="baseForegroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="KOY-bX-W7I" kind="show" id="Drv-pM-s1c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K47-tT-st3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JjZ-Kb-6hF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEp-8z-Y7j" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940.5797101449277" y="116.51785714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mp2-Xy-lsk">
+            <objects>
+                <viewController id="KdN-NZ-IGF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M7g-rK-V1X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毒舌版血型分析：O型人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u27-O8-oB6">
+                                <rect key="frame" x="53" y="118" width="186" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nOp-0l-HkH">
+                                <rect key="frame" x="53" y="259" width="319" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">你是個信念堅定的人，一旦這麼認定了就不會讓步的個性，而且具備積極的行動力，確立目標後就會突然往某個方向衝，但也有可能會造成周遭的人困擾。O型人容易貿然斷定一件事情，造成騷動，結果都不是什麼很重大的事件，變成放羊的孩子，等到真正很重要的事情發生，有可能已經失去周遭人對你的信賴感。
+
+你是否追求如偶像劇般的羅曼史愛情呢？你真的想像力很豐富，但種事情90%都不會真的發生，所以請不要太期待比較好，不過也有對於你這樣腦中充滿童話般幻想的人會抱有好感喔！
+
+O型人似乎有考慮不夠周全的現象，明明可以努力持續到最後一刻，但卻在最後關頭鬆懈了，請堅持到最後不要分心努力的話，做事會更加做得更加完善。
+
+也因為你是一個健談風趣的人，即使不完美也會被周遭的人喜愛喔，如果你是個完美主義O型的話，就會對他人頤指氣使，容易被別人而排擠的現象產生。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8m8-T1-z52"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t1c-cG-pYu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4w-7m-tGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5170" y="-433"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PCd-WY-b45">
+            <objects>
+                <viewController id="L7q-la-Dji" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BLe-LJ-0ce">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毒舌版血型分析：B型人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtP-po-NC7">
+                                <rect key="frame" x="53" y="118" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-fe-naa">
+                                <rect key="frame" x="53" y="259" width="319" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">你似乎是個不由自主會想找樂趣的人，總是會表現得很開朗活潑，在一些很熱鬧、歡騰的地方會看到你的蹤影，雖然開朗是很好的優點，但是也有人會覺得你看起來腦筋看起來不好！當然，開朗與頭腦笨不成正比，反而還有點像是被誤解、受到傷害的感覺更多，不過你本身樂天的性格，當被別人覺得「果然什麼想法、心眼都沒有呀～」的時候反而什麼話都沒辦法反駁。
+
+但B型人似乎有種想成為知識份子的傾向，是也不錯，但是又會被人家冠上討人厭有心眼的惡女，你不管做什麼都容易讓人有壞印象，所以可謂是B型女生的命運...。你通常有覺得自己覺得不錯的事情，也希望別人都能同意你的想法，有些自命不凡，將這樣的思考方式強行加諸在別人身上。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="311-Yj-rgx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lgY-WK-sr2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhs-Zg-kTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4435" y="-433"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vd8-5l-F20">
+            <objects>
+                <viewController id="Cdf-xr-WX2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z22-Nl-4Xh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="毒舌版血型分析：AB型人" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkS-hE-L4Q">
+                                <rect key="frame" x="53" y="118" width="195" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-lR-wWN">
+                                <rect key="frame" x="53" y="259" width="319" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">你是個很容易掌握要領的人，對於知識有旺盛的好奇心，常常涉獵世界中各種常識，的確是個知識淵博的人。的確，你是個腳踏實地的人，但是這是你個人在守住這樣的原則，可是卻沒有考慮他人的想法。「自己的事情自己負責！」這句話似乎最適合來形容你了，因為AB型人有"辦事不靠譜的人就活該"的想法，所以可以說是對他人不會有同理心。
+
+這樣的你可以獲得周遭人的信賴，不過卻不會讓他人把你列入人生另一半的規劃，直到最後總是被當成工具人利用，因為不想被人利用所以想遠離他人，是一種惡性循環，所以你總是一個人或許就是原因所在吧。
+
+周遭對你的印象是租枝大葉、個性率性的人，但是另外一面，你真正的面貌是個充滿自信的自戀狂，偶爾也請對別人的事情表現點興趣，給予別人一些關愛會比較好喔。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="356-vo-SbI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ObR-Jw-nNU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQg-iK-m5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5862" y="-433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
